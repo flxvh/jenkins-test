@@ -17,7 +17,7 @@ def versionPrefix = ""
 try {
   versionPrefix = VERSION_PREFIX
 } catch (Throwable e) {
-  versionPrefix = "1.0"
+  versionPrefix = "1"
 }
 
 def canaryVersion = "${versionPrefix}.${env.BUILD_NUMBER}"
