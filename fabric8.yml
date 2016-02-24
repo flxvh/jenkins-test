@@ -1,5 +1,4 @@
 ---
-pipeline: "workflows/maven/CanaryReleaseStageAndApprovePromote/Jenkinsfile"
 buildName: "jenkins-test"
 codeReview: false
 links:
