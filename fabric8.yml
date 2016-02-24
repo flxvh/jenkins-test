@@ -1,13 +1,15 @@
 ---
+pipeline: "workflows/maven/CanaryReleaseStageAndApprovePromote/Jenkinsfile"
 buildName: "jenkins-test"
 codeReview: false
 links:
   Git: "https://github.com/flxvh/jenkins-test.git"
   Job: "http://172.30.98.7:80/job/jenkins-test"
-  Production: "http://172.30.166.228:80/kubernetes/pods?namespace=jenkins-test-prod"
+  Production: "http://172.30.166.228:80/kubernetes/pods?namespace=jenkins-test-production"
   Staging: "http://172.30.166.228:80/kubernetes/pods?namespace=jenkins-test-staging"
   Testing: "http://172.30.166.228:80/kubernetes/pods?namespace=jenkins-test-testing"
 environments:
   Testing: "jenkins-test-testing"
   Staging: "jenkins-test-staging"
-  Production: "jenkins-test-prod"
+  Production: "jenkins-test-production"
+useLocalFlow: true
